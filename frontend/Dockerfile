@@ -26,6 +26,7 @@ FROM nginx:1.27.4-alpine3.21
 
 # copy the builder output to Nginx's public folder
 COPY --from=builder /app/dist /usr/share/nginx/html
+COPY certs /etc/nginx/certs
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 # expose the port the Nginx server listens on

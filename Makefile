@@ -1,5 +1,5 @@
 PROJECT_ROOT = $(shell git rev-parse --show-toplevel)
-DOCKER_COMPOSE = docker-compose -f $(PROJECT_ROOT)/deploy/docker-compose.yaml
+DOCKER_COMPOSE = docker compose -f $(PROJECT_ROOT)/deploy/docker-compose.yaml
 BACKEND_DIR = $(PROJECT_ROOT)/backend
 FRONTEND_DIR = $(PROJECT_ROOT)/frontend
 
